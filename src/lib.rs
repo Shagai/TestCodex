@@ -38,4 +38,13 @@ mod tests {
         let widget = build_paragraph("sample");
         let _: Paragraph = widget;
     }
+
+    #[test]
+    fn paragraph_contents() {
+        // Ensure the paragraph we build has the expected title and borders
+        let expected = Paragraph::new("hello")
+            .block(Block::default().title("Example").borders(Borders::ALL));
+        let actual = build_paragraph("hello");
+        assert_eq!(actual, expected);
+    }
 }

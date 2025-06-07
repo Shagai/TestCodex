@@ -1,5 +1,5 @@
 [package]
-name = "TestCodex"
+name = "testcodex"
 version = "0.1.0"
 edition = "2021"
 
